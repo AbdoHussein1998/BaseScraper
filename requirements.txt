@@ -1,0 +1,10 @@
+
+
+# Scraping
+selenium==4.39.0
+selenium-wire==5.1.0
+lxml==6.0.2
+beautifulsoup4==4.14.3
+
+fake-useragent==2.2.0
+loguru== 0.7.3
