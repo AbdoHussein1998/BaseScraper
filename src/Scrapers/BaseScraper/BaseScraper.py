@@ -259,7 +259,7 @@ class BaseScraper:
             f"[FAILED] Could not find element after {n_retry} retries: {element_name}"
         )
         return None
-    def selenium_find_multiple_within_main_element_elements_with_retry(self,main_element: WebElement,first: tuple,n_retry: int = 3,second: tuple = None,name: str = None) -> list[WebElement]:
+    def selenium_find_multiple_elements_within_main_element_with_retry(self,main_element: WebElement,first: tuple,n_retry: int = 3,second: tuple = None,name: str = None) -> list[WebElement]:
         """
         Locate multiple child elements within a parent WebElement with retry logic.
 
@@ -355,3 +355,4 @@ class BaseScraper:
             time.sleep(1)
         self.logger.error(f"[FAILED] Could not find elements after {n_retry} retries: {element_name}")
         return []
+
